@@ -1,13 +1,21 @@
 import './App.css'
-import Button from '@mui/material/Button';
+import Content from './components/Content';
+import { StyledEngineProvider } from '@mui/material/styles';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SignInSide from './pages/SignInSide';
 
 function App() {
 
   return (
     <>
-      <div>
-        <Button variant="contained">Hello, MUI v7.3.1!</Button>
-      </div>
+      <StyledEngineProvider injectFirst>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/login" element={<SignInSide />} />
+            <Route path="/" element={<Content />} />
+          </Routes>
+        </BrowserRouter>
+      </StyledEngineProvider>
     </>
   )
 }
