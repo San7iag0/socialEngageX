@@ -53,5 +53,16 @@ export default function Content() {
         </Stack>
       ))}
     </Stack>
+    // <Box
+    //   component="img"
+    //   sx={{
+    //     height: 1200,
+    //     width: 600,
+    //     // maxHeight: { xs: 233, md: 167 },
+    //     // maxWidth: { xs: 350, md: 250 },
+    //   }}
+    //   alt="lion logo"
+    //   src="https://storage.googleapis.com/projects-taag-gcp/bot-taag-virtual-assistant/assets/img/img_login_leon.png"
+    // />
   );
 }
